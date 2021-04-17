@@ -1,5 +1,5 @@
 const express = require('express');
-const port = 8000;
+const port = process.env.PORT||8000;
 const app = express();
 const path = require('path') //inbuilt node path used 
 //set static folder ... is set so that we can execute those folder as soon as server
