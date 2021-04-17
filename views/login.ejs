@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+    <script> 
+    // to prevent back button clicking
+      history.pushState(null, null, null);
+      window.addEventListener('popstate', function () {
+          history.pushState(null, null, null);
+      });
+  </script>
+</head>
+<body  class="container">
+      <div class="row">
+      <div class="col-sm-4"></div>
+      <div class="col-sm-4 align__">
+
+      <form method="post" > 
+        <div class="mb-3"> 
+          <h1><%=error%></h1>
+          <label for="exampleInputEmail1" class="form-label" >Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1"  aria-describedby="emailHelp" name="email">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" name='pass'>
+        </div>
+        <button type="submit" class="btn btn-primary">SignIn</button>
+        <h5>Don't have account?</h5>
+      </form>
+
+      <a href="/signup"><button type="submit" class="btn btn-primary" >SigUp</button></a>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+<script >   
+</script>
+</body> 
+
+</html>

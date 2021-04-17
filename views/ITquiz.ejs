@@ -1,0 +1,65 @@
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head> 
+
+<body>
+  
+  <!-- As a heading
+   --Process to edit/insert data to href link
+   <a href="https://www.google.com/" onclick="location.href=this.href+'?xyz='+val;return false;">
+
+  -->
+  <nav class="navbar ">
+       
+    <a href="/profile/" onclick="location.href=this.href+'?name=<%=profile.name%>&email=<%=profile.email%>';return false;"> <%= profile.name %>  </a> 
+    <span style="margin-left: 75%;">
+    <a href="/home/" onclick="location.href=this.href+'?name=<%=profile.name%>&email=<%=profile.email%>';return false;"> <button class='btnn'>Home</button> </a>
+    <a href="/logout"><button class="btnn">LogOut</button> </a>
+    </span>
+  </nav>
+   <div class="main_div">
+       <div class="inner_div">
+           <h2 class="question">Question comes here</h2>
+           <ul>
+               <li>
+                   <input type="radio" name="answer" id="ans1" class="answer">
+                   <label for="ans1" id="option1">Answer Options</label>
+               </li>
+               <li>
+                <input type="radio" name="answer" id="ans2" class="answer">
+                <label for="ans2" id="option2">Answer Options</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="ans3" class="answer">
+                <label for="ans3" id="option3">Answer Options</label>
+            </li>
+            <li>
+                <input type="radio" name="answer" id="ans4" class="answer">
+                <label for="ans4" id="option4">Answer Options</label>
+            </li>
+           </ul>
+           <button id="submit">submit</button>
+           <div id="showScore" class="scoreArea"></div>
+       </div>
+      
+   </div>
+    
+   <script
+   src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+   integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+   crossorigin="anonymous"
+ ></script>
+   <script src="../js/ITQuiz.js"></script> 
+</body>
+</html>

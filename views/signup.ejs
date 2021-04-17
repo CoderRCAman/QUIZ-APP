@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="../css/login.css">
+    <title>Document</title>
+</head>
+<body class="container">
+    
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-4 align__ "> 
+            <div class="err">
+                <% if(error) {%>
+                <h2><%= error %></h2>
+                <%} %>
+            </div>
+            <form  method="post"> 
+                <label for="exampleInputEmail1" class="form-label">Name</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="name">
+                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="email">
+                <label for="exampleInputPassword1" class="form-label">Password</label>
+                <input type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="pass">
+                <button class="btn btn-primary submit" >SignUp</button>
+            </form>
+        </div>
+        <div class="col-sm-4"></div>
+    </div> 
+    <script>
+       function toMainPage() {
+         
+       }
+    </script>
+</body>
+</html>
